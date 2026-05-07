@@ -6,7 +6,7 @@ A survey website designed to gather information on the usage and perceived effec
 
 ## Authors
 
-- [@octokatherine](https://www.github.com/georgguerster)
+- [@georgguerster](https://www.github.com/georgguerster)
 
 
 

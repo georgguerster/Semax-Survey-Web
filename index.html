@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Semax Survey</title>
+
+    <link rel="stylesheet" href="style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="background-glow"></div>
+
+    <div class="survey-wrapper">
+
+        <!-- HEADER -->
+        <div class="hero">
+            <div class="language-switcher">
+
+                <button class="lang-btn active-lang" data-lang="en">
+                    EN
+                </button>
+
+                <button class="lang-btn" data-lang="de">
+                    DE
+                </button>
+
+            </div>
+        </div>
+
+        <!-- CARD -->
+        <div class="card-container">
+
+            <!-- LEFT ARROW -->
+            <button class="nav-arrow left" id="prevBtn">
+                &#10094;
+            </button>
+
+            <!-- RIGHT ARROW -->
+            <button class="nav-arrow right nextBtn" id="nextBtn">
+                &#10095;
+            </button>
+
+            <!-- SLIDES -->
+            <div class="slides" id="slides">
+
+                <!-- CARD 1 -->
+                <section class="card slide active">
+
+                    <div class="card-content">
+
+                        <div class="step">Step 1 / 3</div>
+
+                        <h2>Optional Contact Information</h2>
+
+                        <div class="grid">
+
+                            <div class="form-group">
+                                <label>First Name (Optional)</label>
+                                <input type="text" id="name" />
+                            </div>
+
+                            <div class="form-group">
+                                <label>Last Name (Optional)</label>
+                                <input type="text" id="lastname" />
+                            </div>
+
+                            <div class="form-group">
+                                <label>Email (Optional)</label>
+                                <input type="email" id="email" />
+                            </div>
+
+                            <div class="form-group">
+                                <label>Mobile Number (Optional)</label>
+                                <input type="tel" id="mobile" />
+                            </div>
+
+                            <div class="form-group">
+                                <label>Age (Optional)</label>
+                                <input type="number" id="age" />
+                            </div>
+
+                            <div class="form-group">
+                                <label>Gender (Optional)</label>
+
+                                <select id="gender">
+                                    <option value="">Select</option>
+                                    <option>Male</option>
+                                    <option>Female</option>
+                                    <option>Other</option>
+                                    <option>Prefer not to say</option>
+                                </select>
+                            </div>
+
+                        </div>
+                        <div class="continueContainer">
+                            <button class="cousntinueBtn nextBtn" id="nextBtn">
+                                Next Page
+                            </button>
+                        </div>
+
+                    </div>
+
+                </section>
+
+                <!-- CARD 2 -->
+                <section class="card slide">
+
+                    <div class="card-content">
+
+                        <div class="step">Step 2 / 3</div>
+
+                        <h2>Cognitive Effects</h2>
+
+                        <div id="questionsContainer"></div>
+                        <div class="continueContainer">
+                            <button class="cousntinueBtn nextBtn" id="nextBtn">
+                                Next Page
+                            </button>
+                        </div>
+                    </div>
+
+                </section>
+
+                <!-- CARD 3 -->
+                <section class="card slide">
+
+                    <div class="card-content">
+
+                        <div class="step">Step 3 / 3</div>
+
+                        <h2>Experience Report</h2>
+
+                        <div class="form-group">
+                            <label>
+                                Why did you start using Semax?
+                            </label>
+
+                            <textarea id="whyStarted"></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label>
+                                Trip Report / Subjective Experience
+                            </label>
+
+                            <textarea id="tripReport"></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label>
+                                Other substances used besides Semax (Optional)
+                            </label>
+
+                            <textarea id="otherSubstances"
+                                placeholder="caffeine, nicotine, supplements, etc."></textarea>
+                        </div>
+
+                        <button class="submit-btn" id="submitBtn">
+                            Submit Survey
+                        </button>
+
+                    </div>
+
+                </section>
+
+            </div>
+        </div>
+
+        <!-- FOOTER -->
+        <footer>
+
+            <a href="https://github.com/yourgithub" target="_blank" id="githubLink">
+                Visit my GitHub
+            </a>
+
+        </footer>
+
+    </div>
+
+    <script src="index.js"></script>
+
+</body>
+
+</html>
